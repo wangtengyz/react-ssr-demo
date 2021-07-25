@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins":[
+    // 插件会支持类的装饰器语法, 包括类装饰器, 属性装饰器, 方法装饰器
+    ["@babel/plugin-proposal-decorators",{"legacy": true}],
+    ["@babel/plugin-proposal-class-properties",{ "loose": true }]
+  ]
+}
